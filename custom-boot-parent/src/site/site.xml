@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="${project.name}"> <!-- combine.self="override"> -->
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.6</version>
+        <!-- Using version 1.7 -->
+    </skin>
+
+    <version position="right"/>
+
+    <publishDate position="right" format="MMMM dd, yyyy"/>
+
+    <body>
+        <head>
+            <![CDATA[
+                <style type="text/css">
+                    #poweredBy a {
+                        pointer-events: none;
+                    }
+                    a.externalLink[href^="https"] {
+                        background-image: url('./images/internet-web-browser.png') !important;
+                    }
+                    pre.prettyprint {
+                        border-color: rgba(0,0,0,0.15);
+                        padding: 9.5px;
+                    }
+                </style>
+            ]]>
+        </head>
+
+        <breadcrumbs>
+            <item name="${this.name}" href="../../../${this.groupId}/${this.artifactId}/${this.version}/index.html"/>
+        </breadcrumbs>
+
+        <menu ref="parent" inherit="bottom"/>
+        <menu ref="modules" inherit="bottom"/>
+        <menu ref="reports" inherit="bottom"/>
+        <footer>
+            <![CDATA[
+                <p class="muted"><em>${site.footer}</em></p>
+            ]]>
+        </footer>
+    </body>
+
+    <custom>
+        <fluidoSkin>
+            <leftColumnClass>span3</leftColumnClass>
+            <bodyColumnClass>span9</bodyColumnClass>
+        </fluidoSkin>
+    </custom>
+
+</project>

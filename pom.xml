@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>custom-boot-project</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>custom-boot-parent</module>
+        <module>custom-boot-dependencies</module>
+        <module>custom-boot-autoconfigure</module>
+        <module>custom-boot-starters</module>
+    </modules>
+
+    <name>custom-boot-project</name>
+    <description>Custom Boot Project</description>
+
+    <prerequisites>
+        <maven>3.5</maven>
+    </prerequisites>
+
+    <!--This can be removed. Same as spring boot dependencies-->
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Custom Organization</name>
+        <url>https://custom.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>Custom</name>
+            <email>custom@custom.com</email>
+            <organization>${project.organization.name}</organization>
+            <organizationUrl>${project.organization.url}</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://git.com/custom/${project.artifactId}</url>
+        <connection>scm:git:git://git.com/custom/${project.artifactId}</connection>
+        <developerConnection>scm:git:ssh://git@git.com/custom/${project.artifactId}</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://jira.company.com/${project.artifactId}</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>http://bamboo.company.com/${project.artifactId}</url>
+    </ciManagement>
+
+</project>
