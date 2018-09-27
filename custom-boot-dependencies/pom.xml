@@ -16,11 +16,7 @@
     <properties>
         <spring.boot.admin.version>2.0.2</spring.boot.admin.version>
         <springfox.swagger.version>2.7.0</springfox.swagger.version>
-        <!-- Plugin versions -->
-        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
-        <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
-        <maven-surefire-report-plugin.version>2.22.0</maven-surefire-report-plugin.version>
-    </properties>
+  </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -39,46 +35,6 @@
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring.boot.admin.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-math3</artifactId>
-                <version>3.0</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!--<build>-->
-        <!--<pluginManagement>-->
-            <!--<plugins>-->
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-site-plugin</artifactId>-->
-                    <!--<executions>-->
-                        <!--<execution>-->
-                            <!--<id>attach-descriptor</id>-->
-                            <!--<goals>-->
-                                <!--<goal>attach-descriptor</goal>-->
-                            <!--</goals>-->
-                        <!--</execution>-->
-                    <!--</executions>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
-                    <!--<version>${maven-checkstyle-plugin.version}</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
-                    <!--<version>${maven-project-info-reports-plugin.version}</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-surefire-report-plugin</artifactId>-->
-                    <!--<version>${maven-surefire-report-plugin.version}</version>-->
-                <!--</plugin>-->
-            <!--</plugins>-->
-        <!--</pluginManagement>-->
-    <!--</build>-->
-
 </project>

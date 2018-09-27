@@ -54,9 +54,9 @@
     </developers>
 
     <scm>
-        <url>https://git.com/custom/${project.artifactId}</url>
-        <connection>scm:git:git://git.com/custom/${project.artifactId}</connection>
-        <developerConnection>scm:git:ssh://git@git.com/custom/${project.artifactId}</developerConnection>
+        <url>https://github.com/eric-rivera/${project.artifactId}</url>
+        <connection>scm:git:git://github.com/eric-rivera/${project.artifactId}</connection>
+        <developerConnection>scm:git:ssh://git@github.com/eric-rivera/${project.artifactId}</developerConnection>
     </scm>
 
     <issueManagement>
