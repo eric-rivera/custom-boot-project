@@ -25,6 +25,11 @@
             <artifactId>springfox-swagger2</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!-- Annotation processing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
